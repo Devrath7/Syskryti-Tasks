@@ -1,0 +1,16 @@
+numbers = [10, 20, 30, 40, 50]
+
+total = 0
+count = 0
+
+# Loop to calculate total and count manually
+for num in numbers:
+    total = total + num
+    count = count + 1
+
+# Avoid division by zero
+if count != 0:
+    mean = total / count
+    print("Mean is:", mean)
+else:
+    print("List is empty. Cannot compute mean.")
